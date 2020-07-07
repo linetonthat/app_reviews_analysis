@@ -22,7 +22,8 @@ In this project:
 
 ---
 ## On-going activities:
-* Learn how to perform preprocessing (NLP methods)
+* Learn how to perform preprocessing (NLP methods: spaCy and nltk libraries)
+* In the reviews, some words are missing (eg 'I'), proper nouns are written in lowercase. This leads to recognition errors and should be addressed (using preprocessing?).
 
 ---
 ## Next steps:
