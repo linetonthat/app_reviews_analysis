@@ -18,16 +18,18 @@ In this project:
 ## So far
 * Load and pre-process data (JSON format) to export dataset as CSV
 * Define a strategy to analyse data
-* Identify methods to implement this strategy
+* Identify and quickly test methods to implement this strategy
 
 ---
 ## On-going activities:
 * Learn how to perform preprocessing (NLP methods: spaCy and nltk libraries)
-* In the reviews, some words are missing (eg 'I'), proper nouns are written in lowercase. This leads to recognition errors and should be addressed (using preprocessing?).
+* Preprocessing - In the reviews, some words are missing (eg 'I'), proper nouns are written in lowercase. This leads to recognition errors and should be addressed (using preprocessing?).
+* [Named_Entities_Recognition.ipynb](https://github.com/linetonthat/app_reviews_analysis/blob/master/NLP/Named_Entities_Recognition.ipynb) - Identify countries and regions where users would mostly use their air quality apps: Test Named Entity Recognition from spaCy with the following labels: 'GPE' (Countries, cities, states), 'LOC' (Non-GPE locations, mountain ranges, bodies of water) (and even 'NORP'(Nationalities or religious or political groups))
+* Segment reviews in order to extract "opinion units": On top of default segmentation from spaCy, define a set of rules to refine sentence segmentation from reviews. For example, add a segmentation at "but" and "although".
 
 ---
 ## Next steps:
-* Segment reviews 
+* Define a pipeline for preprocessing reviews based on our first analyses
 * Tag reviews to have a training dataset
 * Test topic classifier
 * Investigate "live" apps: Are apps still maintained? Downloaded?
