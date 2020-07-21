@@ -16,19 +16,19 @@ In this project:
 
 ---
 ## So far
-* Define a strategy to analyse data
-* Identify and quickly test methods to implement this strategy
-* Preprocess text - In the reviews, abbreviations are used (eg NorCal for Northern California), some proper nouns are written in lowercase or are mispelled, emoticones and emojis are used. In order to allow for correct recognition and classification, some preprocessing is required.
+* Defined a strategy to analyse data
+* Preprocessed text - In the reviews, abbreviations are used (eg NorCal for Northern California), some proper nouns are written in lowercase or are mispelled, emoticones and emojis are used. In order to allow for correct recognition and classification, some preprocessing is required.
    - [Open reviews file and convert to CSV_AirVisual_USA.ipynb](https://github.com/linetonthat/app_reviews_analysis/blob/master/preprocessing/Open%20reviews%20file%20and%20convert%20to%20CSV_AirVisual_USA.ipynb) Load and pre-process data (JSON format) to export dataset as CSV
    - [Removing_some_abbreviations.ipynb](https://github.com/linetonthat/app_reviews_analysis/blob/master/preprocessing/Removing_some_abbreviations.ipynb) - Identify main abbreviations and expand them in the review title and review text.
    - [Preprocessing_emoji_emoticons.ipynb](https://github.com/linetonthat/app_reviews_analysis/blob/master/preprocessing/Preprocessing_emoji_emoticons.ipynb) - Identify emojis and emoticons, and replace them with words in the review title and review text.
-* Extract opinion units
+* Extracted opinion units
    - [Sentence segmentation](https://github.com/linetonthat/app_reviews_analysis/blob/master/NLP/Testing%20sentence%20segmentation.ipynb) Segment reviews in order to extract "opinion units": On top of default segmentation from spaCy, define a set of rules to refine sentence segmentation from reviews. For example, add a segmentation at "but" and "although". Decided to use the review title as an opinion unit as well.
-* Analyze
+* Analyzed
    - [Named_Entities_Recognition.ipynb](https://github.com/linetonthat/app_reviews_analysis/blob/master/NLP/Named_Entities_Recognition.ipynb) - Identify countries and regions where users would mostly use their air quality apps: Test Named Entity Recognition from spaCy with the following labels: 'GPE' (Countries, cities, states), 'LOC' (Non-GPE locations, mountain ranges, bodies of water) (and even 'NORP'(Nationalities or religious or political groups))
 
 ---
 ## On-going activities:
+* Identify and quickly test methods to implement this strategy
 * Learning how to perform preprocessing (NLP methods: spaCy and nltk libraries)
 * Label reviews according to sentiment (positive, neutral, negative)
    * Testing modules to assess sentiment scores based on words used (nltk's VADER), as it allows working on unlabelled data. 
