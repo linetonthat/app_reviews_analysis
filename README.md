@@ -4,10 +4,11 @@ Being interested in air quality awareness in my hometown, I'm curious about what
 My main questions are:
 * What apps are there?
 * What are their main features?
+* How do these apps work? Can we categorize them?
 * How are they rated?
 * What are users looking for when using those apps?
 * What expectations are not currently met?
-* How do these apps work? Is there a classification for such apps?
+
 
 To try to answer these questions, I've collected some data: [features and reviews from selected apps on the app store](https://github.com/linetonthat/appstore_scraping/). 
 In this project:
@@ -29,11 +30,17 @@ In this project:
 ---
 ## On-going activities:
 * Identify and quickly test methods to implement this strategy
-* Learning how to perform preprocessing (NLP methods: spaCy and nltk libraries)
+* Learning how to perform preprocessing (NLP methods: spaCy, nltk, RAKE-nltk libraries)
+* Identify classification tags
+   - Identify topics and subtopics of interest
+   - Extract keywords from opinion units
+   - Assess semantic similarity of keyword vectors with subtopic vectors: Having to investigate what's the right threshold for semantic similarity (if it can be defined...)
+   - Perform tagging opinion unit for a given topic in order to allow for an opinion unit to have several tags if needed
+   - Investigate rule-based tagging to account for "Feature request"
 * Label reviews according to sentiment (positive, neutral, negative)
    * Testing modules to assess sentiment scores based on words used (nltk's VADER), as it allows working on unlabelled data. 
 * Defining and adjusting a pipeline for preprocessing reviews based on our first analyses
-* Identify classification tags
+
 
 ---
 ## Next steps:
