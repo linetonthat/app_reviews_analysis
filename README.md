@@ -1,6 +1,6 @@
 # Analysis of app reviews
 
-Being interested in air quality awareness in my hometown, I'm curious about what apps are available for this purpose, and what are the feedbacks from their users.
+Being interested in air quality awareness, I'm curious about what apps are available for this purpose, and what are the feedbacks from their users.
 My main questions are:
 * What apps are there?
 * What are their main features?
